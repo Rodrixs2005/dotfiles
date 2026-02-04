@@ -1,0 +1,70 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/logo.png",
+        "type": "kitty",
+        "height": 8,
+        "width": 20,
+        "padding": {
+            "top": 1,
+            "left": 1
+        }
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;95;209;250m┌ Hardware 💻 ​─────────────────┐"
+        },
+        {
+            "type": "host",
+            "key": "󰋊 PC",
+            "keyColor": "#5fd1fa",
+            "format": "{1}"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├",
+            "keyColor": "#5fd1fa",
+            "format": "{1}"
+        },
+        {
+            "type": "gpu",
+            "key": "│ └󰍛",
+            "keyColor": "#5fd1fa",
+            "format": "{2}"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;95;209;250m└──────────────────────────────┘"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;95;209;250m┌ System 🐧 ───────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "#5fd1fa",
+            "format": "{name}"
+        },
+        {
+            "type": "wm",
+            "key": "│ ├",
+            "keyColor": "#5fd1fa"
+        },
+        {
+            "type": "de",
+            "key": "│ ├",
+            "keyColor": "#5fd1fa"
+        },
+        {
+            "type": "kernel",
+            "key": "│ └",
+            "keyColor": "#5fd1fa"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;95;209;250;m└──────────────────────────────┘"
+        }
+    ]
+}
