@@ -10,5 +10,5 @@ if ! command -v yay &>/dev/null; then
 fi
 
 echo "Installing AUR packages..."
-yay -S --needed --noconfirm - < aur-pkglist.txt
+yay -S --needed --noconfirm - < aur-pkg.txt
 

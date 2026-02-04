@@ -5,7 +5,6 @@ amd-ucode
 archlinux-keyring
 aspell
 aspell-es
-asusctl
 b43-fwcutter
 base
 base-devel
@@ -16,12 +15,10 @@ blueman
 bluez
 bluez-tools
 bluez-utils
-brave-bin
 brightnessctl
 btrfs-progs
 cantarell-fonts
 chntpw
-clean
 cryptsetup
 device-mapper
 dialog
@@ -57,7 +54,6 @@ firefox
 firewalld
 fish
 freetype2
-galaxybudsclient-bin
 gdm
 git
 glances
@@ -67,7 +63,6 @@ gpm
 gptfdisk
 grim
 grub
-grub-theme-minegrub-world-selection-git
 gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
@@ -170,8 +165,8 @@ sg3_utils
 slurp
 smartmontools
 sof-firmware
-spicetify-cli
 spotify-launcher
+stow
 sudo
 swaync
 sysfsutils
@@ -185,14 +180,11 @@ ttf-liberation
 ttf-nerd-fonts-symbols
 ttf-opensans
 ttf-roboto-mono
-ttf-rubik-vf
 unrar
 unzip
 usb_modeswitch
 usbutils
 valgrind
-ventoy-bin
-visual-studio-code-bin
 viu
 waybar
 welcome
@@ -253,5 +245,4 @@ xorg-xwininfo
 xorg-xwud
 xterm
 xz
-yadm
 yay
