@@ -67,5 +67,3 @@ pacman -Qm | cut -d' ' -f1 > .pkgScripts/aur-pkg.txt
 ### 5. ​🤩​ Enjoy!
 
 If you followed these steps, you are all set! Feel free to customize it further. If you have any suggestions or find a bug, don't hesitate to open an issue or a pull request.
-
-```
