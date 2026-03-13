@@ -81,6 +81,7 @@ iptables-nft
 iwd
 jdk21-openjdk
 jfsutils
+julia
 kitty
 kwalletmanager
 less
@@ -146,13 +147,15 @@ ppp
 pv
 python-capng
 python-defusedxml
+python-fastapi
+python-httpx
 python-jinja
 python-packaging
 python-pip
 python-pyqt5
 python-pyqt6
+python-python-multipart
 python-requests
-r
 rebuild-detector
 reflector
 reflector-simple
@@ -184,6 +187,7 @@ unrar
 unzip
 usb_modeswitch
 usbutils
+uvicorn
 valgrind
 viu
 waybar
