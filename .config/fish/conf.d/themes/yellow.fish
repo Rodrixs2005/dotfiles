@@ -1,0 +1,1 @@
+set -g main_color FFFF00FF

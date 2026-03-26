@@ -7,30 +7,32 @@
 #     man fish-interactive | less +/^SYNTAX.HIGHLIGHTING
 # for appropriate commands to add to ~/.config/fish/config.fish instead.
 # See also the release notes for fish 4.3.0 (run `help relnotes`).
+source ~/dotfiles/.config/fish/conf.d/themes/current.fish
+
 
 set --global fish_color_autosuggestion 9F9F9F
 set --global fish_color_cancel --reverse
-set --global fish_color_command 5FD1FA
-set --global fish_color_comment ' 5FD1FA'
-set --global fish_color_cwd 5FD1FA
+set --global fish_color_command $main_color
+set --global fish_color_comment ' $main_color'
+set --global fish_color_cwd $main_color
 set --global fish_color_cwd_root red
-set --global fish_color_end 5FD1FA
+set --global fish_color_end $main_color
 set --global fish_color_error red
-set --global fish_color_escape 5FD1FA
+set --global fish_color_escape $main_color
 set --global fish_color_history_current --bold
 set --global fish_color_host normal
 set --global fish_color_host_remote yellow
 set --global fish_color_keyword 009999
 set --global fish_color_normal normal
-set --global fish_color_operator 5FD1FA
-set --global fish_color_option 5FD1FA
+set --global fish_color_operator $main_color
+set --global fish_color_option $main_color
 set --global fish_color_param FFFFFF
 set --global fish_color_quote FFFFFF
-set --global fish_color_redirection 5FD1FA
+set --global fish_color_redirection $main_color
 set --global fish_color_search_match white --bold --background=brblack
 set --global fish_color_selection white --bold --background=brblack
 set --global fish_color_status red
-set --global fish_color_user 5FD1FA
+set --global fish_color_user $main_color
 set --global fish_color_valid_path --underline=single
 set --global fish_pager_color_background
 set --global fish_pager_color_completion normal
