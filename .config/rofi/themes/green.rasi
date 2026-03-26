@@ -1,0 +1,25 @@
+* {
+    primary-color: #31FF2EFF;
+    secondary-color: #000000FF;
+    terciary-color: #101010ff;
+
+    font: "Rubik 25";
+    g-spacing: 20px;
+    g-margin: 0;
+
+    b-color: #000000FF;
+    fg-color: @primary-color;
+    fgp-color: @primary-color;
+
+    b-radius: 10px;
+    g-padding: 10px;
+
+    hl-color: @primary-color;
+    hlt-color: @secondary-color;
+    alt-color: @terciary-color;
+    wbg-color: @secondary-color;
+
+    w-border: 2px solid;
+    w-border-color: @primary-color;
+    w-padding: 2px;
+}
