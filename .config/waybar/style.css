@@ -1,3 +1,5 @@
+@import "themes/current.css";
+
 * {
     border: none;
     font-size: 14px;
@@ -13,7 +15,7 @@ window#waybar {
 
 #custom-logo {
   padding: 0 10px;
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 .modules-right {
@@ -37,41 +39,41 @@ window#waybar {
 }
 
 #battery{
-  color: #5fd1fa;
+  color: @main-color;;
 }
 
 #bluetooth{
-  color: #5fd1fa;
+  color: @main-color;;
 }
 
 #pulseaudio{
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 #network{
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 #disk{
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 #memory{
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 #backlight,
 
 #cpu{
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 #temperature{
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 #workspaces button {
-    color: #5fd1fa;       /* color de texto/icono de los workspaces */
+    color: @main-color;       /* color de texto/icono de los workspaces */
     background: transparent; /* fondo de cada workspace */
     border: none;           /* quitar bordes si quieres */
 }
@@ -99,7 +101,7 @@ window#waybar {
 
 
 #clock{
-  color: #5fd1fa;
+  color: @main-color;
 }
 
 #battery.charging {
