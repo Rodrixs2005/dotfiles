@@ -1,1 +1,1 @@
-set -g main_color 3700FFFF
+set -g main_color 3700FF

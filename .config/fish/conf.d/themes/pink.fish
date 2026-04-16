@@ -1,1 +1,1 @@
-set -g main_color FF00E6FF
+set -g main_color FF00E6
