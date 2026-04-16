@@ -43,6 +43,7 @@ eos-log-tool
 eos-packagelist
 eos-quickstart
 eos-rankmirrors
+erlang
 ethtool
 ex-vi-compat
 exfatprogs
@@ -77,7 +78,7 @@ hyprpaper
 hyprshot
 inetutils
 inxi
-iptables-nft
+iptables
 iwd
 jdk21-openjdk
 jfsutils
@@ -101,6 +102,7 @@ lsscsi
 lvm2
 man-db
 man-pages
+maven
 mdadm
 meld
 memtest86+-efi
@@ -120,10 +122,8 @@ networkmanager-openconnect
 networkmanager-openvpn
 nfs-utils
 nilfs-utils
-noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-noto-fonts-extra
 nss-mdns
 ntfs-3g
 ntp
