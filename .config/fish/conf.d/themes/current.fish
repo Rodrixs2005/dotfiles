@@ -1,1 +1,1 @@
-cyan.fish
+/home/rodrigo/dotfiles/.config/fish/conf.d/themes/cyan.fish
