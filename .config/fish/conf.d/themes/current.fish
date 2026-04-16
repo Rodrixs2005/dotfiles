@@ -1,1 +1,1 @@
-/home/rodrigo/dotfiles/.config/fish/conf.d/themes/blue.fish
+/home/rodrigo/dotfiles/.config/fish/conf.d/themes/green.fish

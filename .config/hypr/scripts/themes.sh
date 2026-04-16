@@ -1,8 +1,5 @@
 #!/bin/bash
-
-# 1. Elige el nombre del tema (ej: 'dark' o 'light')
-# Listamos los archivos .conf y quitamos la extensión para elegir
-TEMA=$(ls ~/dotfiles/.config/hypr/themes/*.conf | xargs -n 1 basename | sed 's/.conf//' | rofi -dmenu -p "Tema:")
+TEMA=$(find ~/dotfiles/.config/hypr/themes/ -name "*.conf" ! -name "current.conf" -exec basename {} .conf \; | rofi -dmenu -p "Tema:")
 
 [ -z "$TEMA" ] && exit
 
