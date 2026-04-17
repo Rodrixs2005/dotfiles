@@ -93,7 +93,7 @@
 
   "cpu": {
       "interval": 1,
-      "format": " {usage}%",
+      "format": "   {usage}%",
       "min-length": 6,
       "max-length": 6,
       "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
@@ -123,7 +123,7 @@
     "phone": "",
     "portable": "",
     "car": "",
-    "default": ["🕨","🕩","🕪"]
+    "default": ["󰕿","󰖀","󰕾"]
   },
   "justify": "center",
   "on-click": "amixer sset Master toggle",
