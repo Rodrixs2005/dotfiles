@@ -7,7 +7,7 @@
 #     man fish-interactive | less +/^SYNTAX.HIGHLIGHTING
 # for appropriate commands to add to ~/.config/fish/config.fish instead.
 # See also the release notes for fish 4.3.0 (run `help relnotes`).
-source ~/dotfiles/.config/fish/conf.d/themes/current.fish
+source ~/.config/fish/conf.d/themes/current.fish
 
 
 set --global fish_color_autosuggestion 9F9F9F
