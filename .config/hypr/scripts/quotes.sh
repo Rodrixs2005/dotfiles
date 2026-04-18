@@ -1,7 +1,7 @@
 #!/bin/sh
 
-FILE="$HOME/.config/hypr/scripts/frases.txt"
-TMP="$HOME/.config/hypr/scripts/frases.tmp"
+FILE="$HOME/.config/hypr/scripts/quotes.txt"
+TMP="$HOME/.config/hypr/scripts/quotes.tmp"
 
 if [ ! -s "$TMP" ]; then
     shuf "$FILE" > "$TMP"
