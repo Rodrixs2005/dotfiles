@@ -1,0 +1,5 @@
+.config/hypr/scripts
+.config/hypr/Stickers
+.config/hypr/hyprlock.conf
+
+!.config/hypr/scripts/themes.sh
