@@ -1,6 +1,6 @@
 {
   "layer": "top", "position": "left",
-  "modules-left": ["custom/logo", "clock", "disk", "memory", "cpu", "temperature"],
+  "modules-left": ["custom/logo", "clock", "disk", "memory", "cpu", "temperature", "custom/updates"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["bluetooth", "pulseaudio", "network",  "battery" ],
   "reload_style_on_change":true,
@@ -8,6 +8,15 @@
   "custom/logo": {
     "format": "",
     "tooltip": false
+  },
+
+  "custom/updates": {
+    "format": "󰏔   {}",
+    "interval": "once",
+    "exec": "checkupdates | wc -l",
+    "on-click": "kitty --hold yay -Syu",
+    "signal": 8,
+    "tooltip-format": "{} updates avaliable"
   },
 
   "hyprland/workspaces": {
@@ -28,10 +37,10 @@
        "persistent-workspaces": {
          "*": [ 2, 3, 4, 5, 6, 7, 8, 9]
        }
-},
+  },
 
 
-"clock": {
+  "clock": {
       "format": "{:%H:%M}",
       "interval":60,
       "tooltip-format": "\n<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -55,7 +64,7 @@
   "on-click": "blueman-manager",
  }, 
 
-"network": {
+  "network": {
       "format-wifi": " ",
       "format-ethernet":" ",
       "format-disconnected": "",
@@ -64,18 +73,18 @@
       "tooltip-format-ethernet": "{ifname} 🖧 | {ipaddr}",
     },
 
-"battery": {
+  "battery": {
     "interval":1,
         "states": {
-            "good": 95,
+            "good": 70,
             "warning": 30,
             "critical": 20
         },
-        "format": "{capacity}% 󱟞",
+        "format": "{capacity}%",
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% 󱟢",
         "format-alt": "{capacity}% 󱉞",
-            "format-icons": [
+        "format-icons": [
           "󰁻",
           "󰁼",
           "󰁾",
@@ -85,7 +94,7 @@
         ]
     },
 
- "disk": {
+  "disk": {
     "interval": 30,
     "format": "  {percentage_used}%",
     "path": "/"
@@ -97,38 +106,38 @@
       "min-length": 6,
       "max-length": 6,
       "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
- },
-
-"memory": {
-  "format": "  {percentage}%"
-},
-
-"temperature": {
-  "format": " {temperatureC}°C",            
-  "format-critical": " {temperatureC}°C",
-  "interval": 1,
-  "critical-threshold": 80,
-  "on-click": "foot btop",
- },
-
-"pulseaudio": {
-  "format": "{volume}% {icon}",
-  "format-bluetooth":"󰂰",
-  "format-muted": "<span font='12'></span>",
-  "format-icons": {
-    "headphones": "",
-    "bluetooth": "󰥰",
-    "handsfree": "",
-    "headset": "󱡬",
-    "phone": "",
-    "portable": "",
-    "car": "",
-    "default": ["󰕿","󰖀","󰕾"]
   },
-  "justify": "center",
-  "on-click": "amixer sset Master toggle",
-  "on-click-right": "pavucontrol",
-  "tooltip-format": "{icon}  {volume}%"
-}
+
+  "memory": {
+  "format": "  {percentage}%"
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C",            
+    "format-critical": " {temperatureC}°C",
+    "interval": 1,
+    "critical-threshold": 80,
+    "on-click": "foot btop",
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth":"󰂰",
+    "format-muted": "<span font='12'></span>",
+    "format-icons": {
+      "headphones": "",
+      "bluetooth": "󰥰",
+      "handsfree": "",
+      "headset": "󱡬",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["󰕿","󰖀","󰕾"]
+  },
+    "justify": "center",
+    "on-click": "amixer sset Master toggle",
+    "on-click-right": "pavucontrol",
+    "tooltip-format": "{icon}  {volume}%"
+  }
 }
 

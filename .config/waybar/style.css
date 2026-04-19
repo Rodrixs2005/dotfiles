@@ -18,6 +18,11 @@ window#waybar {
   color: @main-color;
 }
 
+#custom-updates {
+  padding: 0 10px;
+  color: @main-color;
+}
+
 .modules-right {
   padding-left: 5px;
   border-radius: 0 0 15px 15px;
