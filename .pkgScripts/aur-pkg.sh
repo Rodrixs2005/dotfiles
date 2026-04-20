@@ -10,5 +10,4 @@ if ! command -v yay &>/dev/null; then
 fi
 
 echo "Installing AUR packages..."
-yay -S --needed --noconfirm - < aur-pkg.txt
-
+sed 's/#.*//' aur-pkg.txt | xargs -r sudo pacman -Syu --needed --noconfirm

@@ -2,4 +2,4 @@
 set -e
 
 echo "Installing packages..."
-sudo pacman -Syu --needed --noconfirm - < pacman-pkg.txt
+sed 's/#.*//' pacman-pkg.txt | xargs -r sudo pacman -Syu --needed --noconfirm
