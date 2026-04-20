@@ -131,6 +131,7 @@ nvidia-hook
 nvidia-open-dkms
 nvidia-prime
 nvidia-utils
+openmpi
 openvpn
 os-prober
 pacman-contrib
@@ -179,6 +180,7 @@ tldr
 ttf-bitstream-vera
 ttf-dejavu
 ttf-iosevka-nerd
+ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-nerd-fonts-symbols
 ttf-opensans
