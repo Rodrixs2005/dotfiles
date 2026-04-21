@@ -26,6 +26,20 @@ window#waybar {
 #custom-spotify {
   padding: 0 10px;
   color: @main-color;
+  font-size: 20px;
+}
+
+#custom-spotifyUP {
+  padding: 0 10px;
+  color: @main-color;
+  font-size: 25px;
+}
+
+#custom-spotifyDOWN {
+  padding: 0 10px;
+  color: @main-color;
+  font-size: 25px;
+  margin-bottom: 100px;
 }
 
 .modules-right {

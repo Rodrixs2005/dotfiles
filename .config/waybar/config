@@ -2,7 +2,7 @@
   "layer": "top", "position": "left",
   "modules-left": ["custom/logo", "clock", "disk", "memory", "cpu", "temperature", "custom/updates"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["custom/spotify", "bluetooth", "pulseaudio", "network",  "battery"],
+  "modules-right": ["custom/spotifyUP", "custom/spotify", "custom/spotifyDOWN", "bluetooth", "pulseaudio", "network",  "battery"],
   "reload_style_on_change":true,
 
   "custom/logo": {
@@ -24,6 +24,32 @@
     "return-type": "json",
     "exec": "python3 /home/rodrigo/.config/waybar/mediaplayer.py --player spotify",
     "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "killall spotify",
+    "smooth-scrolling-threshold": 1,
+    "on-scroll-up" : "playerctl -p spotify next",
+    "on-scroll-down" : "playerctl -p spotify previous",
+    "exec-if": "pgrep spotify",
+    "tooltip-format": "{}"
+},
+
+"custom/spotifyUP": {
+    "format": "󰁟",
+    "return-type": "json",
+    "exec": "python3 /home/rodrigo/.config/waybar/mediaplayer.py --player spotify",
+    "on-click": "playerctl -p spotify next",
+    "on-click-right": "killall spotify",
+    "smooth-scrolling-threshold": 1,
+    "on-scroll-up" : "playerctl -p spotify next",
+    "on-scroll-down" : "playerctl -p spotify previous",
+    "exec-if": "pgrep spotify",
+    "tooltip-format": "{}"
+},
+
+"custom/spotifyDOWN": {
+    "format": "󰁇",
+    "return-type": "json",
+    "exec": "python3 /home/rodrigo/.config/waybar/mediaplayer.py --player spotify",
+    "on-click": "playerctl -p spotify previous",
     "on-click-right": "killall spotify",
     "smooth-scrolling-threshold": 1,
     "on-scroll-up" : "playerctl -p spotify next",
