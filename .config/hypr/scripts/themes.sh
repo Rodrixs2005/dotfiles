@@ -23,3 +23,35 @@ else
 fi
 
 killall -SIGUSR1 kitty 
+
+case $TEMA in
+    "blue")
+        ASUS_COLOR="0000FF"
+        ;;
+    "cyan")
+        ASUS_COLOR="00EEFF"
+        ;;
+    "green")
+        ASUS_COLOR="00FF00"
+        ;;
+    "orange")
+        ASUS_COLOR="FF6A00"
+        ;;
+    "pink")
+        ASUS_COLOR="FF00E6"
+        ;;
+    "purple")
+        ASUS_COLOR="9900FF"
+        ;;
+    "red")
+        ASUS_COLOR="FF0000"
+        ;;
+    "yellow")
+        ASUS_COLOR="FFFF00"
+        ;;
+    *)  
+        ASUS_COLOR="ffffff"
+        ;;
+esac
+
+asusctl aura effect static -c $ASUS_COLOR
