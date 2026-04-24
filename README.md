@@ -2,11 +2,24 @@
 
 Hello! These are my personal configuration files for Arch Linux (btw ☝️🤓), managed with **GNU Stow** and automated scripts for package installation.
 
+>[!WARNING]
+>This setup is a work in progress, expect frequent changes and improvement
+
+## Features
+* Hyprland (Wayland compositor)
+* Waybar (custom status bar)
+* Fish shell
+* Kitty terminal
+* Fastfetch
+* Rofi
+* Hyprlock
+
 ## 📂 Repository Structure
 
 * `.config/`: Configuration files (Hyprland, Waybar, Fish, Kitty, etc.)
 * `.pkgScripts/`: Installation scripts and package lists.
 * `README.md`: This documentation.
+* `screenshots`: Preview of the setup
 
 ---
 
@@ -20,6 +33,8 @@ git clone [https://github.com/Rodrixs2005/dotfiles.git](https://github.com/Rodri
 cd ~/dotfiles
 
 ```
+>[!CAUTION]
+>Make sure to make backups before applying any change into your configuration
 
 ### 2. ​​⚙️​ Run installation scripts (Optional)
 
@@ -50,6 +65,8 @@ cd ~/dotfiles
 stow .
 
 ```
+>[!NOTE]
+>This will symplink configs into your home directory
 
 ### 4. ​🏗️​ Maintenance: Update your package lists
 
