@@ -3,9 +3,9 @@
 Hello! These are my personal configuration files for Arch Linux (btw ☝️🤓), managed with **GNU Stow** and automated scripts for package installation.
 
 >[!WARNING]
->This setup is a work in progress, expect frequent changes and improvement
+>This setup is a work in progress - expect frequent changes and improvement
 
-## Features
+## 🌟​ Features
 * Hyprland (Wayland compositor)
 * Waybar (custom status bar)
 * Fish shell
@@ -13,6 +13,12 @@ Hello! These are my personal configuration files for Arch Linux (btw ☝️🤓)
 * Fastfetch
 * Rofi
 * Hyprlock
+
+## Preview
+![Desktop](screenshots/Clean_Desktop.png)
+![Fish + Fastfetch](screenshots/fish+fastfetch.png)
+![Theme_selector with rofi](screenshots/theme_selector.png)
+
 
 ## 📂 Repository Structure
 
@@ -31,7 +37,6 @@ To replicate this environment on a clean Arch (btw ☝️🤓) installation:
 ```bash
 git clone [https://github.com/Rodrixs2005/dotfiles.git](https://github.com/Rodrixs2005/dotfiles.git) ~/dotfiles
 cd ~/dotfiles
-
 ```
 >[!CAUTION]
 >Make sure to make backups before applying any change into your configuration
@@ -81,6 +86,13 @@ pacman -Qm | cut -d' ' -f1 > .pkgScripts/aur-pkg.txt
 
 ```
 
-### 5. ​🤩​ Enjoy!
+### 5. After installation
+Press win+z to open the terminal and execute the following command
+```bash
+cat dotfiles/hypr/binds.conf
+```
+There will be shown the list of binds of the set up, you can customize it as you wish
+
+### 6. ​🤩​ Enjoy!
 
 If you followed these steps, you are all set! Feel free to customize it further. If you have any suggestions or find a bug, don't hesitate to open an issue or a pull request.
