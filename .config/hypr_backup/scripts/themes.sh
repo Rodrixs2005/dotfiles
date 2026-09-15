@@ -1,9 +1,9 @@
 #!/bin/bash
-TEMA=$(find $HOME/.config/hypr/themes/ -name "*.lua" ! -name "current.lua" -exec basename {} .lua \; | rofi -dmenu -p "Tema:")
+TEMA=$(find $HOME/.config/hypr/themes/ -name "*.conf" ! -name "current.conf" -exec basename {} .conf \; | rofi -dmenu -p "Tema:")
 
 [ -z "$TEMA" ] && exit
 
-ln -sf $HOME/.config/hypr/themes/$TEMA.lua    $HOME/.config/hypr/themes/current.lua
+ln -sf $HOME/.config/hypr/themes/$TEMA.conf    $HOME/.config/hypr/themes/current.conf
 ln -sf $HOME/.config/waybar/themes/$TEMA.css   $HOME/.config/waybar/themes/current.css
 ln -sf $HOME/.config/fish/conf.d/themes/$TEMA.fish  $HOME/.config/fish/conf.d/themes/current.fish
 ln -sf $HOME/.config/rofi/themes/$TEMA.rasi  $HOME/.config/rofi/themes/current.rasi
