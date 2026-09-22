@@ -1,1 +1,1 @@
-set -g main_color 9900FFFF
+set -g main_color 9900FF
