@@ -12,8 +12,8 @@
 
   "custom/updates": {
     "format": "󰏔   {}",
-    "interval": "once",
-    "exec": "checkupdates | wc -l",
+    "interval": "3600",
+    "exec": "checkupdates 2>/dev/null | wc -l",
     "on-click": "kitty --hold yay -Syu",
     "signal": 8,
     "tooltip-format": "{} updates avaliable"
