@@ -1,8 +1,14 @@
-asusctl
+basedpyright
 brave-bin
 clean
 galaxybudsclient-bin
 grub-theme-minegrub-world-selection-git
+localsend-bin
+pyrefly
+python-minny
+python-types-pyserial
 spicetify-cli
+thonny
 ttf-rubik-vf
 visual-studio-code-bin
+xwaylandvideobridge
