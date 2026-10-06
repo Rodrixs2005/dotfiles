@@ -16,8 +16,6 @@ hl.monitor({
 
 
 
-
-
 hl.env("XCURSOR_THEME", "Qogir-Dark")
 
 hl.env("XCURSOR_SIZE", 24)
