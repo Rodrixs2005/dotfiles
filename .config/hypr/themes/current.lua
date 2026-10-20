@@ -1,1 +1,1 @@
-/home/rodrigo/.config/hypr/themes/cyan.lua
+/home/rodrigo/.config/hypr/themes/red.lua

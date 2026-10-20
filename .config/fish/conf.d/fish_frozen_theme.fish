@@ -47,3 +47,6 @@ set --global fish_pager_color_selected_background --background=brblack
 set --global fish_pager_color_selected_completion
 set --global fish_pager_color_selected_description
 set --global fish_pager_color_selected_prefix
+set --global __fish_git_prompt_color_branch $main_color
+set --global __fish_git_prompt_color_prefix cyan $main_color
+set --global __fish_git_prompt_color_suffix cyan $main_color
