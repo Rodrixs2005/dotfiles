@@ -16,7 +16,7 @@
     "exec": "checkupdates 2>/dev/null | wc -l",
     "on-click": "kitty --hold yay -Syu",
     "signal": 8,
-    "tooltip-format": "{} updates avaliable"
+    "tooltip-format": "{} updates available"
   },
 
 "custom/spotify": {
