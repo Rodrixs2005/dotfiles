@@ -11,13 +11,13 @@
   },
 
   "custom/updates": {
-    "format": "󰏔   {}",
-    "interval": "3600",
-    "exec": "checkupdates 2>/dev/null | wc -l",
-    "on-click": "kitty --hold yay -Syu",
+    "format": "󰏔    {}",
+    "interval": 3600,
+    "exec": "sh -c 'sleep 10; checkupdates 2>/dev/null | wc -l'",
+    "on-click": "kitty sh -c 'yay -Syu; pkill -RTMIN+8 waybar; echo \"\nUpdate completed. Press Enter to exit\"; read'",
     "signal": 8,
     "tooltip-format": "{} updates available"
-  },
+  }
 
 "custom/spotify": {
     "format": "",
@@ -148,7 +148,7 @@
   },
 
   "memory": {
-  "format": "  {percentage}%"
+  "format": "  {percentage}%"
   },
 
   "temperature": {
