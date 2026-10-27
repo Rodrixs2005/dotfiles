@@ -106,11 +106,6 @@ window#waybar {
     color: #ffffff;          /* color del texto del workspace activo */
 }
 
-
-
-#clock {
-  padding: 0 5px;
-}
 #pulseaudio {
   padding-top: 3px;
 }
@@ -126,8 +121,18 @@ window#waybar {
 
 #clock{
   color: @main-color;
+  padding: 0 5px;
 }
 
+tooltip {
+  background: #1e1e2e;
+  border: 1px solid @main-color;
+  border-radius: 8px;
+}
+
+tooltip label {
+  color: #ffffff;
+}
 #battery.charging {
     color: #000000;
     background-color: #26A65B;

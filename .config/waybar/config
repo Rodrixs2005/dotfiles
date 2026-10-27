@@ -17,7 +17,7 @@
     "on-click": "kitty sh -c 'yay -Syu; pkill -RTMIN+8 waybar; echo \"\nUpdate completed. Press Enter to exit\"; read'",
     "signal": 8,
     "tooltip-format": "{} updates available"
-  }
+  },
 
 "custom/spotify": {
     "format": "",
@@ -80,15 +80,16 @@
 
 
   "clock": {
-      "format": "{:%H:%M}",
-      "interval":60,
-      "tooltip-format": "\n<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "calendar-weeks-pos": "right",
-      "today-format": "<span color='#7645AD'><b><u>{}</u></b></span>",
-      "format-calendar": "<span color='#aeaeae'><b>{}</b></span>",
-      "format-calendar-weeks": "<span color='#aeaeae'><b>W{:%V}</b></span>",
-      "format-calendar-weekdays": "<span color='#aeaeae'><b>{}</b></span>"
-      },
+    "format": "{:%d %b \n %H:%M}",
+    "interval": 60,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar-weeks-pos": "right",
+    "today-format": "<b><span color='#ff5555'><u>{}</u></span></b>",
+    "format-calendar": "<span color='#aeaeae'><b>{}</b></span>",
+    "format-calendar-weeks": "<span color='#666666'><b>W{:%V}</b></span>",
+    "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+    "on-click": "gnome-clocks"
+  },
 
   "bluetooth": {
   "format-on": "",
