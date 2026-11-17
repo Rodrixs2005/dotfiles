@@ -1,5 +1,3 @@
----@module 'hl'
-
 local themes_current = require("themes.current")
 
 hl.config({

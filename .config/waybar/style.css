@@ -3,7 +3,7 @@
 * {
     border: none;
     font-size: 14px;
-    font-family: "Rubik", sans-serif; ;
+    font-family: "Rubik", sans-serif;
     font-weight: bold;
     min-height: 30px;
 }
@@ -116,23 +116,11 @@ window#waybar {
   padding-top: 0;
 }
 
-
-
-
 #clock{
   color: @main-color;
   padding: 0 5px;
 }
 
-tooltip {
-  background: #1e1e2e;
-  border: 1px solid @main-color;
-  border-radius: 8px;
-}
-
-tooltip label {
-  color: #ffffff;
-}
 #battery.charging {
     color: #000000;
     background-color: #26A65B;
@@ -159,4 +147,14 @@ tooltip label {
         background-color: #ffffff;
         color: #000000;
     }
+}
+
+tooltip {
+  background: #1e1e2e;
+  border: 3px solid @main-color;
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: #ffffff;
 }

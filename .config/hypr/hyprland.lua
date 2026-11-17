@@ -1,5 +1,3 @@
----@module 'hl'
-
 local themes_current = require("themes.current")
 local general = require("general")
 local decoration = require("decoration")

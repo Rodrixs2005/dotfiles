@@ -10,6 +10,18 @@
     "tooltip": false
   },
 
+  "clock": {
+    "format": "{:%d %b \n %H:%M}",
+    "interval": 60,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar-weeks-pos": "right",
+    "today-format": "<b><span color='#ff5555'><u>{}</u></span></b>",
+    "format-calendar": "<span color='#aeaeae'><b>{}</b></span>",
+    "format-calendar-weeks": "<span color='#666666'><b>W{:%V}</b></span>",
+    "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+    "on-click": "gnome-clocks"
+  },
+
   "custom/updates": {
     "format": "󰏔    {}",
     "interval": 3600,
@@ -76,19 +88,6 @@
        "persistent-workspaces": {
          "*": [1, 2, 3, 4, 5, 6, 7, 8, 9]
        }
-  },
-
-
-  "clock": {
-    "format": "{:%d %b \n %H:%M}",
-    "interval": 60,
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "calendar-weeks-pos": "right",
-    "today-format": "<b><span color='#ff5555'><u>{}</u></span></b>",
-    "format-calendar": "<span color='#aeaeae'><b>{}</b></span>",
-    "format-calendar-weeks": "<span color='#666666'><b>W{:%V}</b></span>",
-    "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-    "on-click": "gnome-clocks"
   },
 
   "bluetooth": {

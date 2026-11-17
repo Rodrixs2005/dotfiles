@@ -1,5 +1,3 @@
----@module 'hl'
-
 local mainMod = "SUPER"
 
 local mainMod_S = "SUPER + SHIFT"
@@ -10,13 +8,13 @@ local fileManager = "thunar"
 
 local menu = "rofi -show drun"
 
-local brave = brave
+local brave = "brave"
 
 local vscode = "code"
 
 local intelliJ = "intellij-idea-ultimate-edition"
 
-local reboot = reboot
+local reboot = "reboot"
 
 local poweroff = "shutdown now"
 
@@ -26,17 +24,17 @@ local screenshotW = "hyprshot -m window"
 
 local screenshotR = "hyprshot -m region"
 
-hl.bind(mainMod .. " + " .. "Z", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. " + " .. "Z", hl.dsp.exec_cmd(terminal))
 
 hl.bind(mainMod .. " + " .. "X", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + " .. "M", hl.dsp.exit())
 
-hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("thunar"))
+hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd(fileManager))
 
 hl.bind(mainMod .. " + " .. "V", hl.dsp.window.float())
 
-hl.bind(mainMod .. " + " .. "A", hl.dsp.exec_cmd("rofi -show drun"))
+hl.bind(mainMod .. " + " .. "A", hl.dsp.exec_cmd(menu))
 
 hl.bind(mainMod .. " + " .. "P", hl.dsp.window.pseudo())
 
@@ -44,15 +42,15 @@ hl.bind(mainMod .. " + " .. "P", hl.dsp.window.pseudo())
 
 --bind = $mainMod, S, togglesplit, # dwindle
 
-hl.bind(mainMod .. " + " .. "B", hl.dsp.exec_cmd("brave"))
+hl.bind(mainMod .. " + " .. "B", hl.dsp.exec_cmd(brave))
 
-hl.bind(mainMod_S .. " + " .. "R", hl.dsp.exec_cmd("reboot"))
+hl.bind(mainMod_S .. " + " .. "R", hl.dsp.exec_cmd(reboot))
 
-hl.bind(mainMod_S .. " + " .. "P", hl.dsp.exec_cmd("shutdown now"))
+hl.bind(mainMod_S .. " + " .. "P", hl.dsp.exec_cmd(poweroff))
 
-hl.bind(mainMod .. " + " .. "I", hl.dsp.exec_cmd("intellij-idea-ultimate-edition"))
+hl.bind(mainMod .. " + " .. "I", hl.dsp.exec_cmd(intelliJ))
 
-hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("code"))
+hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd(vscode))
 
 hl.bind(mainMod .. " + " .. "F", hl.dsp.window.fullscreen())
 

@@ -1,5 +1,3 @@
----@module 'hl'
-
 hl.config({
     animations = {
         enabled = true,
